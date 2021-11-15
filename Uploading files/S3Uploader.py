@@ -149,7 +149,7 @@ class S3Uploader():
 if __name__ == '__main__':
     s3_client = session.client('s3')
     obj = S3Uploader(r'ruta\video2.mp4',
-                     "video2.mp4", "antamina-aa-dev-test123", 5, 3)
+                     "video2.mp4", "aa-dev-test123", 5, 3)
     #Carga de archivos multiparte
     multipart_upload(obj.file, obj.key, obj.bucket,
                      obj.chunk_size, obj.processes)
